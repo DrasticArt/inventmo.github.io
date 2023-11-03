@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>InventMo </title>
+  <link rel="icon" href="../imagenes/Logo Completo InventMo.png">
+  <link rel="stylesheet" href="../CSS/registrar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <div class="nav">
+        <div class="logo1">
+          <a href="home.html"><img src="../imagenes/Logo InventMo.png" alt="logo ACME" title="logo ACME"></a>
+        </div>
+        <div class="enlaces">
+          <a class="boton-menu" id="boton-menu" href="javascript:void(0)"> <img class="efecto" src="../imagenes/menu.png" alt="imagen menu" title="Desplegar el menu"></a>
+          <a class="ocultar-peq efecto"href="HomeAdministrador.html">Inicio</a>
+          <a class="ocultar-peq efecto"href="catalogos_clientes.html">Empleados</a>
+          <a class="ocultar-peq efecto"href="reportes.html">Reportes</a>
+          <a class="ocultar-peq efecto"href="https://w.app/InvetMo">Contacto</a>
+          <a class="ocultar-peq efecto" href="../index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+
+      <div class="nav-movil">
+        <div class="enlaces-movil">
+          <a class="efecto" href="HomeAdministrador.html">Inicio</a>
+          <a class="efecto" href="catalogos_clientes.html">Empleados</a>
+          <a class="efecto" href="reportes.html">Reportes</a>
+          <a class="efecto" href="https://w.app/InvetMo">Contacto</a>
+          <a class="efecto" href="../index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+
+      <div class="titulopage">
+        <h2>Entrada De Productos</h2> 
+      </div>
+
+      <div class="contenedorInformacion">
+        <div class="registrarinfosup" onclick="quitarAlerta()">
+          <div class="tituloinfo">
+            <h3>Escoja primero una Categoría y luego el producto que está entrando:</h3>
+          </div>
+          <div class="labels">
+            <h3>Categoría:</h3>
+          </div>
+          <div class="llenables">
+            <select class="categoria" id="categorias" onchange="llenarProductos()" name="producto">
+            </select>
+          </div>
+          <div class="labels">
+            <h3>Producto:</h3>
+          </div>
+          <div class="llenables">
+            <select class="producto" id="productos" name="producto">
+              <option value="" selected="selected"> - selecciona -</option>
+            </select>
+          </div>
+        </div>
+        <div class="registrarinfomed"  onclick="quitarAlerta()">
+          <div class="labels titulomed">
+            <h3>Cantidad:</h3>
+          </div>
+          <div class="llenables desplegable1">
+            <input type="number" name="cantidad" value="" id="cantidad" placeholder="Cantidad que ingresa">
+          </div>
+        </div>
+        <div class="alertaProducto" id="alertaProducto">
+          <h4>Ingrese Los Campos Requeridos Correctamente</h4>
+        </div>
+        <div class="contenedorBotonAgregar">
+          <input type="button" name="agregar" class="botonAgregar" id="botonAgregar" onclick="validarProducto()" value="Agregar a la Compra">
+        </div>
+        <div class="registrarinfoinf" onclick="quitarAlertaProveedor()">
+          <div class="labels">
+            <h3>Proveedor</h3>
+          </div>
+          <div class="llenables">
+            <select class="proveedores" id="proveedores" name="proveedor">
+              <option value="" selected="selected"> - selecciona -</option>
+            </select>
+          </div>
+        </div>
+        <div class="contenedorListaCompras" id="contenedorListaCompras">
+        </div>
+      </div>
+      <div class="alertaProveedor" id="alertaProveedor">
+        <h4>Escoja Un Proveedor </h4>
+      </div>
+      <div class="contenedorsegundario">
+        <div class="botones">
+          <a><input type="button" class="botonFinalizar" id="botonFinalizar" name="guardar" value="Finalizar Compra" onclick="validarProveedor()"></a>
+          <a href="HomeAdministrador.html"><input type="button" class="botonCancelar" name="cancelar" value="Cancelar"></a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </body>
+  <script src="../js/menuResponsive.js" charset="utf-8"></script>
+  <script src="../js/operacion_entrada.js" charset="utf-8"></script>
+</html>

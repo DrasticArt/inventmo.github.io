@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InventMo</title>
+     <link rel="stylesheet" href="../Css/InicioDeSeccion.css">
+     <link rel="icon" href="../imagenes/Logo Completo InventMo.png">
+</head>
+<body>   
+
+    <!-- Formulario Inicio Seccion -->
+    <div class="formulario">
+        <h1>Inicio De Sesión</h1>
+
+
+        <form class="form" name="formulario" action="../Html/home.html" onclick="quitarAlerta()" onsubmit="return validarFormulario()">
+            <div class="username1">
+                <input class="username" type="text" id="email" name="email"  value="" required >
+                <label>Email</label>
+            </div>
+
+            <div class="username1">
+                <input class="username" type="password" id="pass" name="pass" value="" required >
+                <label>Contraseña</label>
+            </div>
+
+            <div class="buttons">
+                <div class="mensaje d-none" id="mensaje">
+                    <p class="texto">Usuario o contraseña incorrecta</p>
+                </div>
+                <br>
+                <input class="button" type="submit" name="boton" class="boton" value="Iniciar sesión">
+            </div>
+
+            <br>
+            <div class="informacion">
+                <h5>Para probar el sistema:</h5>
+                <h5>Email: inventmo@gmail.com</h5>
+                <h5>Contraseña: 1234</h5>
+            </div>
+            <br>
+            <a href="Register.html">No tienes cuenta?</a>
+        </form>
+
+        <div class="buttons">
+            <img class="slider3" src="../imagenes/Logo Completo InventMo.png" alt="" >
+        </div>
+
+    </div>
+
+    <script src="../Js/InicioDeSeccion.js" charset="utf-8"></script>
+
+</body>
+</html>

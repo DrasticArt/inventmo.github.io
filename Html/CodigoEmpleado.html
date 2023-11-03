@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InventMo</title>
+     <link rel="stylesheet" href="../Css/CodigoEmpleado.css">
+     <link rel="icon" href="../imagenes/Logo Completo InventMo.png">
+</head>
+<body>   
+
+    <!-- Formulario Codido Empleado -->
+    <div class="formulario">
+        <h1>Codigo De Empleado</h1>
+
+
+        <form class="form" name="formulario" action="../Html2/home1.html" onclick="quitarAlerta()" onsubmit="return validarFormulario()">
+            <div class="username1">
+                <input class="username" type="text" id="email" name="email"  value="" required >
+                <label>Nombre De Usuario</label>
+            </div>
+            <div class="username1">
+                <input class="username" type="password" id="pass" name="pass" value="" required >
+                <label>Codigo De Empleado</label>
+            </div>
+
+            <p><b>Nota:</b> Codigo de empleado lo genera el administrador de la empresa.</p><br>
+
+            <div class="mensaje d-none" id="mensaje">
+                <p class="texto">Usuario o contraseña incorrecta</p>
+            </div>
+
+            <div class="buttons">
+                <br>
+                <input class="button" type="submit" name="boton" class="boton" value="Iniciar sesión">
+                <br><br>
+            </div>
+        </form>
+
+        <div class="informacion">
+            <h5>Para probar el sistema:</h5>
+            <h5>Nombre: InventMo</h5>
+            <h5>Codigo: 1234</h5>
+        </div>
+
+        <div class="buttons"><img class="slider3" src="../imagenes/Logo Completo InventMo.png" alt="" ></div>
+    </div>
+
+    <script src="../Js/CodigoEmpleado.js" charset="utf-8"></script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;500;600;700;800 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.swiper-slide h1{
+    color: #edb312;
+}
+
+.swiper-slide p{
+    font-size: 18px;
+    padding: 0 30%;
+}
+
+.slider1{
+    width: 40%;   
+}
+
+.slider2{
+    width: 12%;
+}
+
+.slider3{
+    width: 12%;
+}
+
+.swiper-slide button{
+    font-size: 20px;
+}
+
+.button {
+    border: none; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.secondary1 {
+    background-color: #edb312;
+    color: #ffffff;
+    padding: 14px 30px;
+} 
+
+.secondary1:hover {
+    background-color: #f8d77e;
+    color: #000000;
+    padding: 14px 30px; 
+}
+
+.secondary2 {
+    background-color: #edb312;
+    color: #ffffff;
+    padding: 14px 50px; 
+} 
+
+.secondary2:hover {
+    background-color: #f8d77e;
+    color: #000000;
+    padding: 14px 50px; 
+}
+
+.swiper-button-prev::after{
+    font-size: 30px;
+}
+
+.swiper-button-next::after{
+    font-size: 30px;
+}
+
+.swiper-button-next{
+    color: #edb312;
+    font-size: 25px;
+}
+
+.swiper-button-prev{
+    color: #edb312;
+    font-size: 25px;
+}
+
+@media(max-width:991px){
+    .swiper-slide p{
+        padding: 0% 14%;
+        font-size: 22px;
+    }
+
+    .swiper-slide{
+        padding: 50px;
+    }
+
+    .slider1{
+        width: 40%;
+    }
+
+    .slider2{
+        width: 20%;
+    }
+
+    .slider3{
+        width: 25%;
+    }
+    
+    .swiper-slide button{
+        font-size: 20px;
+    }
+    
+    .button {
+        border: none; 
+        color: white; 
+        cursor: pointer; 
+        border-radius: 5px; 
+    }
+    
+    .secondary1 {
+        background-color: #edb312;
+        color: #ffffff;
+        padding: 14px 30px;
+    } 
+    
+    .secondary1:hover {
+        background-color: #f8d77e;
+        color: #000000;
+        padding: 14px 30px; 
+    }
+    
+    .secondary2 {
+        background-color: #edb312;
+        color: #ffffff;
+        padding: 14px 50px; 
+    } 
+    
+    .secondary2:hover {
+        background-color: #f8d77e;
+        color: #000000;
+        padding: 14px 50px; 
+    }
+    
+}
+
+@media(max-width:500px){
+    .swiper-slide p{
+        padding: 0%;
+    }
+
+    .swiper-slide{
+        padding: 50px;
+    }
+
+    .slider1{
+        width: 90%;
+    }
+
+    .slider2{
+        width: 40%;
+    }
+
+    .slider3{
+        width: 50%;
+    }
+}
